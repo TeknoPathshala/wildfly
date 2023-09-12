@@ -1,0 +1,8 @@
+version: '3'
+services:
+  wildfly:
+    build:
+      context: ./wildfly-docker  # Path to the directory containing your Dockerfile
+    ports:
+      - "8081:8081"             # Map container port 8080 to host port 8080
+      - "9990:9990"             # Map container port 9990 to host port 9990
